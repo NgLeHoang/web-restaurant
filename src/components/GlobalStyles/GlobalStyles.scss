@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
 
 :root {
   --font-base: 'Cormorant Upright', serif;
@@ -10,6 +11,9 @@
   --color-crimson: #F5EFDB;
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
+
+  --wash: #3E4042;
+  --web-wash: #18191A;
 }
 
 * {
@@ -17,6 +21,18 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-y: overlay;
+  font-family: var(--font-alt);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
 a {

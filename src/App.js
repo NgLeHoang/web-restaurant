@@ -1,21 +1,32 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
+import routes from "./routes";
+import { DefaultLayout } from "./layout/DefaultLayout";
 
 const App = () => (
-  <div>
-    <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery />
-    <FindUs />
-    <Footer />
-  </div>
+  <Router>
+    <div className="App">
+      <Routes>
+        {routes.map((route, index) => {
+          const Page = route.component;
+          let Layout = DefaultLayout;
+
+          return (
+            <Route
+              key={index}
+              path={route.path}
+              element={
+                <Layout>
+                  <Page />
+                </Layout>
+              }
+            />
+          )
+        })}
+      </Routes>
+    </div>
+  </Router>
 );
 
 export default App;
