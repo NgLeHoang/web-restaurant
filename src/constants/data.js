@@ -1,82 +1,92 @@
 import images from './images';
 
-const wines = [
+const phoSpecial = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    titleEng: 'Combo Phở/ Special Phở',
+    titleVn: 'Steak, brisket, fatty flank, tendon, beef ball',
+    price: '$13.5',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    titleEng: 'Beef Ball Phở',
+    titleVn: 'Phở bò viên',
+    price: '$12.95',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    titleEng: 'Steak Phở',
+    titleVn: 'Phở bò tái',
+    price: '$12.95',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    titleEng: 'Steak, Flank & Tendon Phở',
+    titleVn: 'Phở tái, nạm',
+    price: '$12.95',
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    titleEng: 'Vegetable & Tofu Phở',
+    titleVn: 'Phở rau đậu hủ',
+    price: '$12.95',
+  },
+  {
+    titleEng: 'Seafood Phở',
+    titleVn: 'Phở hải sản',
+    price: '$12.95',
   },
 ];
 
-const cocktails = [
+const ricePlateSpecial = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
+    titleEng: 'Grilled Pork Chops Rice',
+    titleVn: 'Cơm sườn nướng',
+    price: '$12.95',
   },
   {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    titleEng: "Shaking Beef & Fried Rice",
+    titleVn: 'Cơm chiên bò lúc lắc',
+    price: '$17.95',
   },
   {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    titleEng: 'Grilled New York Steak Rice',
+    titleVn: 'Cơm bò New York',
+    price: '$18.95',
   },
   {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    titleEng: 'Sweet & Sour Chicken Rice',
+    titleVn: 'Cơm gà xào chua ngọt',
+    price: '$16.95',
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    titleEng: 'General Tso Chicken Rice',
+    titleVn: 'Cơm gà tướng quân',
+    price: '$16.95',
+  },
+  {
+    titleEng: 'Mongolian Beef Rice',
+    titleVn: 'Cơm bò mông cổ',
+    price: '$17.95',
   },
 ];
 
 const awards = [
   {
     imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    titleEng: 'Bib Gourmond',
+    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
   },
   {
     imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    titleEng: 'Rising Star',
+    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
   },
   {
     imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    titleEng: 'AA Hospitality',
+    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
   },
   {
     imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    titleEng: 'Outstanding Chef',
+    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { phoSpecial, ricePlateSpecial, awards };

@@ -17,6 +17,7 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import homeimage from '../assets/homeimage.jpg';
+import phobospecial from '../assets/phobospecial.jpg';
 
 export default {
   bg,
@@ -37,5 +38,6 @@ export default {
   sign,
   quote,
   gericht,
-  homeimage
+  homeimage,
+  phobospecial
 };
