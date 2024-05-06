@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     padding: 60px;
     background-color: var(--web-wash);
+    animation: fadeIn 0.6s forwards;
 }
 
 .home-info {
@@ -27,10 +28,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
 
     img {
-        width: 80%;
+        width: 100%;
+        height: auto;
         border-radius: 20px;
+        transition: transform 1s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
     }
 }
 

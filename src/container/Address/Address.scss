@@ -1,0 +1,23 @@
+.address-wrapper {
+    padding: 10px;
+    font-family: var(--font-base);
+    background-color: #e3e3e3;
+
+    .address-title {
+        text-align: center;
+        color: var(--color-golden);
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 5.6rem;
+    }
+
+    .address-map {
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+
+        &:hover {
+            color: #8d8d8d;
+        }
+    }
+}
