@@ -66,27 +66,21 @@ const ricePlateSpecial = [
   },
 ];
 
-const awards = [
+const imagesGallery = [
   {
-    imgUrl: images.award02,
-    titleEng: 'Bib Gourmond',
-    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
+    images: images.gallery1
   },
   {
-    imgUrl: images.award01,
-    titleEng: 'Rising Star',
-    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award05,
-    titleEng: 'AA Hospitality',
-    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award03,
-    titleEng: 'Outstanding Chef',
-    subtitleEng: 'Lorem ipsum dolor sit amet, consectetur.',
+    images: images.gallery2
+  },{
+    images: images.gallery3
+  },{
+    images: images.gallery4
+  },{
+    images: images.gallery5
+  },{
+    images: images.gallery6
   },
 ];
 
-export default { phoSpecial, ricePlateSpecial, awards };
+export default { phoSpecial, ricePlateSpecial, imagesGallery };

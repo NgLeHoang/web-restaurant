@@ -1,10 +1,6 @@
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
-import gallery01 from '../assets/gallery01.png';
-import gallery02 from '../assets/gallery02.png';
-import gallery03 from '../assets/gallery03.png';
-import gallery04 from '../assets/gallery04.png';
 import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
@@ -18,15 +14,17 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import homeimage from '../assets/homeimage.jpg';
 import phobospecial from '../assets/phobospecial.jpg';
+import gallery1 from '../assets/gallery1.jpg';
+import gallery2 from '../assets/gallery2.jpg';
+import gallery3 from '../assets/gallery3.jpg';
+import gallery4 from '../assets/gallery4.jpg';
+import gallery5 from '../assets/gallery5.jpg';
+import gallery6 from '../assets/gallery6.jpg';
 
 export default {
   bg,
   chef,
   G,
-  gallery01,
-  gallery02,
-  gallery03,
-  gallery04,
   knife,
   logo,
   menu,
@@ -39,5 +37,11 @@ export default {
   quote,
   gericht,
   homeimage,
-  phobospecial
+  phobospecial,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
 };

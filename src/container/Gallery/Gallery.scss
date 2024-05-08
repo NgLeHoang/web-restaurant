@@ -1,0 +1,15 @@
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    padding: 80px;
+    gap: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .gallery-wrapper {
+        padding: 20px;
+        grid-template-columns: none;
+        gap: 0;
+    } 
+}
