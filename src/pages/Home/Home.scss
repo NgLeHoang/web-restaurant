@@ -45,6 +45,30 @@
     }
 }
 
+.category-container {
+    padding: 40px;
+
+    .category-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .category-title {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+    
+        .category-dash {
+            width: 160px;
+            height: 2px;
+            background: var(--color-black);
+            margin-bottom: 24px;
+        }
+    }
+}
+
 // Responsive
 @media screen and (max-width: 1150px){
     .home-image {

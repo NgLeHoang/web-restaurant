@@ -83,4 +83,27 @@ const imagesGallery = [
   },
 ];
 
-export default { phoSpecial, ricePlateSpecial, imagesGallery };
+const imagesCategory = [
+  {
+    image: images.milkteaCategory,
+    title: 'Milk Tea',
+  },
+  {
+    image: images.charamCategory,
+    title: 'Spring Rolls'
+  },
+  {
+    image: images.phoCategory,
+    title: 'Pho'
+  },
+  {
+    image: images.riceCategory,
+    title: 'Rice Plates'
+  },
+  {
+    image: images.otherCategory,
+    title: 'Other'
+  },
+];
+
+export default { phoSpecial, ricePlateSpecial, imagesGallery, imagesCategory };

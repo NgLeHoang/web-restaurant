@@ -3,10 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 import styles from './Home.scss';
 import { SubHeading } from '../../components';
-import { images } from '../../constants';
+import { images, data } from '../../constants';
 import config from '../../config';
 import SpecialMenu from "../../container/Menu/SpecialMenu";
 import Address from "../../container/Address/Address";
+import Slider from "../../components/Slider/Slider";
 
 const cx = classNames.bind(styles);
 
@@ -29,6 +30,13 @@ const Home = () => {
             </div>
             <Address />
             <SpecialMenu />
+            <div className={cx('category-container')}>
+                <div className={cx('category-heading')}>
+                    <h1 className={cx('category-title')}>Category Menu</h1>
+                    <div className={cx('category-dash')}></div>
+                </div>
+                <Slider slides={data.imagesCategory}/>
+            </div>
         </div>
     );
 };
