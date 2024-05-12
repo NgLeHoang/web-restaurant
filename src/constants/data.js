@@ -106,4 +106,46 @@ const imagesCategory = [
   },
 ];
 
-export default { phoSpecial, ricePlateSpecial, imagesGallery, imagesCategory };
+const imagesCategoryMenu = [
+  {
+    imageUrl: images.appetizer,
+    title: 'Appetizer'
+  },
+  {
+    imageUrl: images.bevergate,
+    title: 'Bevergate'
+  },
+  {
+    imageUrl: images.friedrice,
+    title: 'Fried Rice'
+  },
+  {
+    imageUrl: images.friednoodle,
+    title: 'Stir - Fried Noodles'
+  },
+  {
+    imageUrl: images.familysize,
+    title: 'Family Size'
+  },
+  {
+    imageUrl: images.noodlesoup,
+    title: 'Noodles Soup'
+  },
+  {
+    imageUrl: images.phoCategory,
+    title: 'Pho'
+  },
+  {
+    imageUrl: images.ricevermicellibowl,
+    title: 'Rice Vermicelli Bowl'
+  },
+  {
+    imageUrl: images.riceplate,
+    title: 'Rice Plate'
+  },
+  {
+    imageUrl: images.springroll,
+    title: 'Spring Rolls'
+  },
+];
+export default { phoSpecial, ricePlateSpecial, imagesGallery, imagesCategory, imagesCategoryMenu };

@@ -1,4 +1,5 @@
 .navbar-wrapper {
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -6,6 +7,13 @@
     background: var(--color-black);
     padding: 0 2rem;
     font-family: var(--font-alt);
+    z-index: 999;
+    transition: background-color 0.8s ease;
+}
+
+.navbar-wrapper.scrolled {
+    background: var(--wash);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {

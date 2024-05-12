@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import images from '../../../constants/images';
 import styles from './Navbar.scss';
 import classNames from 'classnames/bind';
@@ -12,8 +12,23 @@ const cx = classNames.bind(styles);
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={cx('navbar-wrapper')}>
+    <nav className={cx('navbar-wrapper', { 'scrolled': isScrolled })}>
     <div className={cx('navbar-logo')}>
       <img src={images.logo} alt='app-logo'/>
     </div>

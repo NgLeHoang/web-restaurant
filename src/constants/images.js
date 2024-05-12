@@ -14,6 +14,15 @@ import charamCategory from '../assets/charamCategory.jpg';
 import phoCategory from '../assets/phoCategory.jpg';
 import riceCategory from '../assets/riceCategory.jpg';
 import otherCategory from '../assets/otherCategory.jpg';
+import bevergate from '../assets/beverage.jpg';
+import familysize from '../assets/familysize.jpg';
+import friedrice from '../assets/friedrice.jpg';
+import riceplate from '../assets/riceplate.jpg';
+import friednoodle from '../assets/stir-friednoodle.jpg';
+import springroll from '../assets/springroll.jpg';
+import noodlesoup from '../assets/noodlesoup.jpg';
+import ricevermicellibowl from '../assets/ricevermicellibowl.jpg';
+import appetizer from '../assets/appetizer.jpg';
 
 export default {
   bg,
@@ -31,5 +40,14 @@ export default {
   charamCategory,
   phoCategory,
   riceCategory,
-  otherCategory
+  otherCategory,
+  bevergate,
+  familysize,
+  friedrice,
+  riceplate,
+  friednoodle,
+  springroll,
+  noodlesoup,
+  ricevermicellibowl,
+  appetizer,
 };
