@@ -2,28 +2,9 @@ import classNames from "classnames/bind";
 import { FiFacebook, FiInstagram } from "react-icons/fi"
 import styles from './Footer.scss';
 import { images } from "../../../constants";
-import { useEffect, useState } from "react";
 const cx = classNames.bind(styles);
 
 const Footer = () => {
-    const [overlayHeight, setOverlayHeight] = useState(700);
-
-    useEffect(() => {
-        const adjustOverlayHeight = () => {
-            const footerLinksElement = document.querySelector('.footer-links');
-            if (footerLinksElement) {
-              const footerLinksHeight = footerLinksElement.clientHeight;
-              setOverlayHeight(footerLinksHeight);
-            }
-        };
-
-        adjustOverlayHeight();
-
-        window.addEventListener('resize', adjustOverlayHeight);
-        return () => {
-            window.removeEventListener('resize', adjustOverlayHeight);
-        };
-    }, [overlayHeight]);
 
     return (
         <div className={cx('footer-wrapper')}>
@@ -39,7 +20,7 @@ const Footer = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
-            <img src={images.bg} alt="bg footer" className={cx('footer-overlay')} style={{ height: overlayHeight }}/>
+            <img src={images.bg} alt="bg footer" className={cx('footer-overlay')}/>
             <div className={cx('footer-links')}>
                 <div className={cx('footer-links-contact')}>
                     <h1 className={cx('footer-heading')}>Contact Us</h1>
