@@ -6,6 +6,7 @@ import { Pagination, Navigation} from 'swiper/modules';
 
 import classNames from "classnames/bind";
 import styles from './Slider.scss';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -45,9 +46,11 @@ const Slider = ({ slides }) => {
         >
             {slides.map((slide) => (
                 <SwiperSlide key={slide.image} className={cx('slider-image-container')}>
-                    <img src={slide.image} alt={slide.title} className={cx('slider-image')}/>
-                    <p className={cx('image-title')}>{slide.title}</p>
-                    <div className="image-overlay"></div>
+                    <Link to={slide.url} reloadDocument>
+                        <img src={slide.image} alt={slide.title} className={cx('slider-image')}/>
+                        <p className={cx('image-title')}>{slide.title}</p>
+                        <div className="image-overlay"></div>
+                    </Link>
                 </SwiperSlide>
             ))}
         </Swiper>

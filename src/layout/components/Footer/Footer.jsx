@@ -6,20 +6,24 @@ import { useEffect, useState } from "react";
 const cx = classNames.bind(styles);
 
 const Footer = () => {
-    const [overlayHeight, setOverlayHeight] = useState(0);
+    const [overlayHeight, setOverlayHeight] = useState(700);
 
     useEffect(() => {
+        const adjustOverlayHeight = () => {
+            const footerLinksElement = document.querySelector('.footer-links');
+            if (footerLinksElement) {
+              const footerLinksHeight = footerLinksElement.clientHeight;
+              setOverlayHeight(footerLinksHeight);
+            }
+        };
+
         adjustOverlayHeight();
+
         window.addEventListener('resize', adjustOverlayHeight);
         return () => {
             window.removeEventListener('resize', adjustOverlayHeight);
         };
-    }, []);
-
-    const adjustOverlayHeight = () => {
-        const footerLinksHeight = document.querySelector('.footer-links').clientHeight;
-        setOverlayHeight(footerLinksHeight);
-    };
+    }, [overlayHeight]);
 
     return (
         <div className={cx('footer-wrapper')}>

@@ -9,7 +9,7 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 46vh;
+    height: 400px;
     opacity: 0.9;
     object-fit: cover;
 }
@@ -79,11 +79,21 @@
 
 //Responsive
 @media screen and (max-width: 1150px){
+    .footer-overlay {
+        height: 644px;
+    }
+
     .footer-links {
         flex-direction: column;
     }
     
     .footer-links-logo {
         margin: 16px 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .footer-overlay {
+        height: 674px;
     }
 }

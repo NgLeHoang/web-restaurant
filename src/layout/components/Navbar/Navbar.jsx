@@ -7,6 +7,8 @@ import config from '../../../config';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu} from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import DropDown from '../../../components/DropDown/DropDown';
+import data from '../../../constants/data';
 const cx = classNames.bind(styles);
 
 const Navbar = () => {
@@ -33,14 +35,14 @@ const Navbar = () => {
       <img src={images.logo} alt='app-logo'/>
     </div>
     <ul className={cx('navbar-links')}>
-      <Link to={config.routes.home}><span>Home</span></Link>
-      <Link to={config.routes.menu}><span>Menu</span></Link>
-      <Link to={config.routes.gallery}><span>Gallary</span></Link>
-      <Link to={config.routes.about}><span>About</span></Link>
-      <Link to={config.routes.contact}><span>Contact</span></Link>
+      <Link to={config.routes.home} reloadDocument><span>Home</span></Link>
+      <Link to={config.routes.menu} reloadDocument><DropDown title="Menu" items={data.menuNavbarDetails}/></Link>
+      <Link to={config.routes.gallery} reloadDocument><span>Gallary</span></Link>
+      <Link to={config.routes.about} reloadDocument><span>About</span></Link>
+      <Link to={config.routes.contact} reloadDocument><span>Contact</span></Link>
     </ul>
     <div className={cx('navbar-booked')}>
-      <Link to={config.routes.contact}><span>Book Table</span></Link>
+      <Link to={config.routes.contact} reloadDocument><span>Book Table</span></Link>
     </div>
     <div className={cx('navbar-small-screen')}>
       <GiHamburgerMenu color="#fff" fontSize={26} onClick={() => setToggleMenu(true)}/>
@@ -49,11 +51,11 @@ const Navbar = () => {
       <div className={cx('navbar-small-screen-overlay slide-bottom')}>
         <MdOutlineRestaurantMenu fontSize={26} className={cx('overlay-close')} onClick={() => setToggleMenu(false)} />
         <ul className={cx('navbar-small-screen-links')}>
-          <Link to={config.routes.home}><span>Home</span></Link>
-          <Link to={config.routes.menu}><span>Menu</span></Link>
-          <Link to={config.routes.gallery}><span>Gallary</span></Link>
-          <Link to={config.routes.about}><span>About</span></Link>
-          <Link to={config.routes.contact}><span>Contact</span></Link>
+          <Link to={config.routes.home} reloadDocument><span>Home</span></Link>
+          <Link to={config.routes.menu} reloadDocument><span>Menu</span></Link>
+          <Link to={config.routes.gallery} reloadDocument><span>Gallary</span></Link>
+          <Link to={config.routes.about} reloadDocument><span>About</span></Link>
+          <Link to={config.routes.contact} reloadDocument><span>Contact</span></Link>
         </ul>
       </div>
       )}

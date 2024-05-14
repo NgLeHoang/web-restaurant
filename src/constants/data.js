@@ -1,4 +1,5 @@
 import images from './images';
+import config from '../config';
 
 const phoSpecial = [
   {
@@ -87,65 +88,80 @@ const imagesCategory = [
   {
     image: images.milkteaCategory,
     title: 'Milk Tea',
+    url: config.routes.beverage
   },
   {
     image: images.charamCategory,
-    title: 'Spring Rolls'
+    title: 'Spring Rolls',
+    url: config.routes.springrolls
   },
   {
     image: images.phoCategory,
-    title: 'Pho'
+    title: 'Pho',
+    url: config.routes.pho
   },
   {
     image: images.riceCategory,
-    title: 'Rice Plates'
+    title: 'Rice Plates',
+    url: config.routes.riceplate
   },
   {
     image: images.otherCategory,
-    title: 'Other'
+    title: 'Other',
+    url: config.routes.menu
   },
 ];
 
 const imagesCategoryMenu = [
   {
     imageUrl: images.appetizer,
-    title: 'Appetizer'
+    title: 'Appetizer',
+    url: config.routes.appetizers
   },
   {
     imageUrl: images.bevergate,
-    title: 'Bevergate'
+    title: 'Bevergate',
+    url: config.routes.beverage
   },
   {
     imageUrl: images.friedrice,
-    title: 'Fried Rice'
+    title: 'Fried Rice',
+    url: config.routes.friedrice
   },
   {
     imageUrl: images.friednoodle,
-    title: 'Stir - Fried Noodles'
+    title: 'Stir - Fried Noodles',
+    url: config.routes.stirfriednoodle
   },
   {
     imageUrl: images.familysize,
-    title: 'Family Size'
+    title: 'Family Size',
+    url: config.routes.familysize
   },
   {
     imageUrl: images.noodlesoup,
-    title: 'Noodles Soup'
+    title: 'Noodles Soup',
+    url: config.routes.noodlesoup
   },
   {
     imageUrl: images.phoCategory,
-    title: 'Pho'
+    title: 'Pho',
+    url: config.routes.pho
   },
   {
     imageUrl: images.ricevermicellibowl,
-    title: 'Rice Vermicelli Bowl'
+    title: 'Rice Vermicelli Bowl',
+    url: config.routes.ricevermicellibowl
   },
   {
     imageUrl: images.riceplate,
-    title: 'Rice Plate'
+    title: 'Rice Plate',
+    url: config.routes.riceplate
   },
   {
     imageUrl: images.springroll,
-    title: 'Spring Rolls'
+    title: 'Spring Rolls',
+    url: config.routes.springrolls
   },
 ];
 
@@ -589,6 +605,49 @@ const menuItemsPageBeverages = [
   },
 ];
 
+const menuNavbarDetails = [
+  {
+    label: 'Appetizers',
+    url: config.routes.appetizers
+  },
+  {
+    label: 'Spring Rolls',
+    url: config.routes.springrolls
+  },
+  {
+    label: 'Fried Rice',
+    url: config.routes.friedrice
+  },
+  {
+    label: 'Phở',
+    url: config.routes.pho
+  },
+  {
+    label: 'Noodles Soup',
+    url: config.routes.noodlesoup
+  },
+  {
+    label: 'Rice Plates',
+    url: config.routes.riceplate
+  },
+  {
+    label: 'Rice Vermicelli Bowls',
+    url: config.routes.ricevermicellibowl
+  },
+  {
+    label: 'Family Size',
+    url: config.routes.familysize
+  },
+  {
+    label: 'Stir-Fried Noodles',
+    url: config.routes.stirfriednoodle
+  },
+  {
+    label: 'Beverage',
+    url: config.routes.beverage
+  },
+];
+
 export default { phoSpecial, 
   ricePlateSpecial, 
   imagesGallery, 
@@ -604,4 +663,5 @@ export default { phoSpecial,
   menuItemsPageFamilySize,
   menuItemsPageStirFriedNoodles,
   menuItemsPageBeverages,
+  menuNavbarDetails,
  };
