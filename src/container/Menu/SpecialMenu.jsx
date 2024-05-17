@@ -4,6 +4,8 @@ import classNames from 'classnames/bind';
 import styles from './SpecialMenu.scss';
 import { MenuItem, SubHeading } from '../../components';
 import { data, images } from '../../constants';
+import { Link } from 'react-router-dom';
+import config from '../../config';
 
 const cx = classNames.bind(styles);
 
@@ -36,7 +38,9 @@ const SpecialMenu = () => (
     </div>
 
     <div style={{marginTop: '16px'}}>
-      <button className={cx('button-explore')}>View More</button>
+      <button className={cx('button-explore')}>
+        <Link to={config.routes.menu} reloadDocument>View More</Link>
+      </button>
     </div>
   </div>
 );

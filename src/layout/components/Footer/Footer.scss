@@ -29,6 +29,14 @@
     text-align: center;
 }
 
+.footer-links-contact {
+    .footer-links-details {
+        &:hover {
+            color: var(--color-golden);
+        }
+    }
+}
+
 .footer-heading {
     font-family: var(--font-base);
     color: var(--color-golden);
@@ -49,6 +57,10 @@
         font-size: 2.6rem;
         margin: 0 8px;
         color: var(--color-white);
+
+        &:hover {
+            color: var(--color-golden);
+        }
     }
 }
 
@@ -56,6 +68,7 @@
     margin: 0 12px;
     text-align: center;
     line-height: 3rem;
+    user-select: none;
 
     img:first-child {
         width: 120px;
@@ -92,19 +105,7 @@
     }
 }
 
-@media screen and (max-width: 550px){
-    .footer-overlay {
-        height: 700px;
-    }
-}
-
-@media screen and (max-width: 530px){
-    .footer-overlay {
-        height: 736px;
-    }
-}
-
-@media screen and (max-width: 440px){
+@media screen and (max-width: 585px){
     .footer-overlay {
         height: 700px;
     }

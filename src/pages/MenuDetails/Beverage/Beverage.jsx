@@ -11,7 +11,7 @@ const Beverage = () => (
     <div className={cx('fried-rice-wrapper')}>
         <CategoryPage pageTitle="Menu Beverages" image={images.bg}/>
         <div className={cx('menu-items-page-container')}>
-            <MenuItemsPage title="Beverages" image={images.familysize}/>
+            <MenuItemsPage title="Beverages" image={images.bevergate}/>
             <div className={cx('menu-items-page-details')}>
                 {data.menuItemsPageBeverages.map((beverage, index) => (
                     <MenuItem key={beverage.titleEng + index} titleEng={beverage.titleEng} titleVn={beverage.titleVn} price={beverage.price}/>

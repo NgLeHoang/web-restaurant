@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import { FiFacebook, FiInstagram } from "react-icons/fi"
+import { FiFacebook, FiInstagram, FiPhone } from "react-icons/fi"
 import styles from './Footer.scss';
 import { images } from "../../../constants";
 const cx = classNames.bind(styles);
@@ -24,8 +24,12 @@ const Footer = () => {
             <div className={cx('footer-links')}>
                 <div className={cx('footer-links-contact')}>
                     <h1 className={cx('footer-heading')}>Contact Us</h1>
-                    <p className={cx('footer-links-details')}>7758 W Tidwell Rd Ste 108, Houston, TX 77040, USA</p>
-                    <p className={cx('footer-links-details')}>713.690.7508</p>
+                    <a href="https://maps.app.goo.gl/tNvaG5r5RR9MqR8S7" target="_blank" rel="noreferrer">
+                        <p className={cx('footer-links-details')}>7758 W Tidwell Rd Ste 108, Houston, TX 77040, USA</p>
+                    </a>
+                    <a href="tel: 7136907508">
+                        <p className={cx('footer-links-details')}>713.690.7508</p>
+                    </a>
                 </div>
                 <div className={cx('footer-links-logo')}>
                     <img src={images.logo} alt="footer logo" />
@@ -34,7 +38,8 @@ const Footer = () => {
                     <img src={images.spoon} alt="footer spoon" className={cx('footer-spoon')}/>
                     <div className={cx('footer-links-icon')}>
                         <a href="https://www.facebook.com/PhoDaLatHouston" target="_blank" rel="noreferrer"><FiFacebook /></a>
-                        <FiInstagram />
+                        <a href="https://www.instagram.com/pho_da_lat"><FiInstagram /></a>
+                        <a href="tel: 7136907508"><FiPhone /></a>
                     </div>
                 </div>
                 <div className={cx('footer-links-works')}>

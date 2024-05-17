@@ -31,9 +31,11 @@ const Navbar = () => {
 
   return (
     <nav className={cx('navbar-wrapper', { 'scrolled': isScrolled })}>
-    <div className={cx('navbar-logo')}>
-      <img src={images.logo} alt='app-logo'/>
-    </div>
+    <Link to={config.routes.home} reloadDocument>
+      <div className={cx('navbar-logo')}>
+        <img src={images.logo} alt='app-logo'/>
+      </div>
+    </Link>
     <ul className={cx('navbar-links')}>
       <Link to={config.routes.home} reloadDocument><span>Home</span></Link>
       <Link to={config.routes.menu} reloadDocument><DropDown title="Menu" items={data.menuNavbarDetails}/></Link>
